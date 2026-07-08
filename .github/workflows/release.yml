@@ -184,7 +184,7 @@ jobs:
   npm-packages:
     runs-on: ubuntu-latest
     needs: version
-    if: needs.version.outputs.published == 'true' && github.ref_name == 'next'
+    # if: needs.version.outputs.published == 'true' && github.ref_name == 'next'
     continue-on-error: true
     steps:
       - name: Checkout code
